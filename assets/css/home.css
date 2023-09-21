@@ -13,6 +13,8 @@
 }
 * .titleFooter {
   font-size: 18px;
+  font-family: "Shrikhand", cursive;
+  margin: 0;
 }
 
 body {
@@ -130,6 +132,10 @@ header {
 footer {
   background: #353535;
   color: white;
+  padding: 20px;
+}
+footer img {
+  padding-right: 10px;
 }
 
 /*# sourceMappingURL=home.css.map */
