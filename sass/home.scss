@@ -1,3 +1,11 @@
+// Variables colors
+$bg-color: #F6F6F6;
+$bg-location: #EAEAEA;
+$bg-color-footer: #353535;
+$primary-color: #9356DC;
+$gradient-color: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+$box-shadow: 0px 4px 15px 0px #00000026;
+
 // General
 * {
     font-family: 'Roboto', sans-serif;
@@ -9,14 +17,6 @@
         font-size: 18px;
     }
 }
-
-// Variables colors
-$bg-color: #F6F6F6;
-$bg-location: #EAEAEA;
-$bg-color-footer: #353535;
-$primary-color: #9356DC;
-$gradient-color: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
-$box-shadow: 0px 4px 15px 0px #00000026;
 
 body {
     margin: 0;
