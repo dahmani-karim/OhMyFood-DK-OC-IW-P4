@@ -17,62 +17,92 @@
 
     <main>
 
-        <section class="location">
+        <div class="location">
             <img src="./assets/images/icon/Pin.svg" alt="Location Pin">
             <span>Paris, Belleville</span>
-        </section>
+        </div>
 
         <section class="accueil">
             <h1 class="title">Réservez le menu qui vous convient</h1>
             <p>Découvrez des restaurants d’exception, sélectionnés par nos soins.</p>
-            <button>Explorez nos restaurants</button>
+            <a href="#ancre-restaurants">Explorez nos restaurants</a>
         </section>
 
-        <section>
+        <section class="fonctionnement">
             <h1 class="title">Fonctionnement</h1>
-            <button><img src="./assets/images/icon/mobile-screen-button.svg" alt="Mobile Icon">Choisissez un restaurant</button>
-            <button><img src="./assets/images/icon/list-ul.svg" alt="List Icon">Composez votre menu</button>
-            <button><img src="./assets/images/icon/store.svg" alt="Store Icon">Dégustez au restaurant</button>
+            <div class="notice">
+                <article>
+                    <p class="number">1</p>
+                    <img src="./assets/images/icon/mobile-screen-button.svg" alt="Mobile Icon">
+                    <p>Choisissez un restaurant</p>
+                </article>
+                <article>
+                    <p class="number">2</p>
+                    <img src="./assets/images/icon/list-ul.svg" alt="List Icon">
+                    <p>Composez votre menu</p>
+                </article>
+                <article>
+                    <p class="number">3</p>
+                    <img src="./assets/images/icon/store.svg" alt="Store Icon">
+                    <p>Dégustez au restaurant</p>
+                </article>
+            </div>
         </section>
 
-        <section>
-            <h1>Restaurants</h1>
-            <article>
-                <img src="./assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Photo de plat">
-                <h2>La palette du goût</h2>
-                <p>Ménilmontant</p>
-                <img src="./assets/images/icon/Heart.svg" alt="Heart Icon">
+        <section class="restaurants">
+            <h1 id="ancre-restaurants" class="title">Restaurants</h1>
+            <article class="card">
+                <img id="photo" src="./assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Photo de plat">
+                <div class="content">
+                    <div>
+                        <h2 class="titleCard">La palette du goût</h2>
+                        <p class="subtitle">Ménilmontant</p>
+                    </div>
+                    <img id="icon" src="./assets/images/icon/Like.svg" alt="Heart Icon">
+                </div>
             </article>
-            <article>
-                <img src="./assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="Photo de plat">
-                <h2>La note enchantée</h2>
-                <p>Charonne</p>
-                <img src="./assets/images/icon/Heart.svg" alt="Heart Icon">
+            <article class="card">
+                <img id="photo" src="./assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="Photo de plat">
+                <div class="content">
+                    <div>
+                        <h2 class="titleCard">La note enchantée</h2>
+                        <p class="subtitle">Charonne</p>
+                    </div>
+                    <img id="icon" src="./assets/images/icon/Like.svg" alt="Heart Icon">
+                </div>
             </article>
-            <article>
-                <img src="./assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Photo de plat">
-                <h2>À la française</h2>
-                <p>Cité Rouge</p>
-                <img src="./assets/images/icon/Heart.svg" alt="Heart Icon">
+            <article class="card">
+                <img id="photo" src="./assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Photo de plat">
+                <div class="content">
+                    <div>
+                        <h2 class="titleCard">À la française</h2>
+                        <p class="subtitle">Cité Rouge</p>
+                    </div>
+                    <img id="icon" src="./assets/images/icon/Like.svg" alt="Heart Icon">
+                </div>
             </article>
-            <article>
-                <img src="./assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Photo de plat">
-                <h2>Le délice des sens</h2>
-                <p>Folie-Méricourt</p>
-                <img src="./assets/images/icon/Heart.svg" alt="Heart Icon">
+            <article class="card">
+                <img id="photo" src="./assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Photo de plat">
+                <div class="content">
+                    <div>
+                        <h2 class="titleCard">Le délice des sens</h2>
+                        <p class="subtitle">Folie-Méricourt</p>
+                    </div>
+                    <img id="icon" src="./assets/images/icon/Like.svg" alt="Heart Icon">
+                </div>
             </article>
         </section>
 
     </main>
     
     <footer>
-
-        <img src="./assets/images/logo/ohmyfood@2x.svg" alt="Logo OhMyFood">
-        <p>Proposer un restaurant</p>
-        <p>Devenir partenaire</p>
-        <p>Mentions légales</p>
-        <p>Contact</p>
-
+            <h3 class="titleFooter">ohmyfood</h3>
+            <div>
+                <p><img src="/assets/images/icon/Couverts.svg" alt="icone de couverts">Proposer un restaurant</p>
+                <p><img src="/assets/images/icon/Hands.svg" alt="icone poignée de main"> Devenir partenaire</p>
+                <p>Mentions légales</p>
+                <p>Contact</p>
+            </div>
     </footer>
 </body>
 
