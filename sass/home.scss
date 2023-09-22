@@ -124,6 +124,17 @@ header {
             object-fit: cover;
             border-radius: 15px 15px 0 0;
         }
+        .etiquette {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 80px;
+            height: 29px;
+            position: absolute;
+            right: 33px;
+            background: #99E2D0;
+            color: #008766;
+        }
         .content {
             display: flex;
             justify-content: space-between;
