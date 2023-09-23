@@ -18,7 +18,10 @@
 }
 * a {
   text-decoration: none;
-  color: white;
+  color: inherit;
+}
+* .fa-heart {
+  font-size: 22px;
 }
 
 body {
@@ -66,6 +69,7 @@ header {
   border: none;
   border-radius: 25px;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
+  color: white;
 }
 
 .fonctionnement {
@@ -149,8 +153,9 @@ footer {
   color: white;
   padding: 20px 20px 20px 20px;
 }
-footer img {
-  padding-right: 10px;
+footer i {
+  width: 12px;
+  padding-right: 15px;
 }
 
-/*# sourceMappingURL=home.css.map */
+/*# sourceMappingURL=style.css.map */

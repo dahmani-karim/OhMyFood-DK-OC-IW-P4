@@ -26,7 +26,10 @@ $box-shadow: 0px 4px 15px 0px #00000026;
     }
     a {
         text-decoration: none;
-        color: white;
+        color: inherit;
+    }
+    .fa-heart {
+        font-size: 22px;
     }
 }
 
@@ -74,6 +77,7 @@ header {
         border: none;
         border-radius: 25px;
         box-shadow: $box-shadow;
+        color: white;
     }
 }
 
@@ -151,13 +155,4 @@ header {
             }
         }
     }
-}
-
-footer {
-        background: $bg-color-footer;
-        color: white;
-        padding: 20px 20px 20px 20px;
-        img {
-            padding-right: 10px;
-        }
 }
