@@ -73,12 +73,6 @@ footer .footerLinks {
   background: #F6F6F6;
 }
 
-.purpleButton {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 * {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
