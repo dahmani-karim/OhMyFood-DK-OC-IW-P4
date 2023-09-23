@@ -148,25 +148,14 @@ header {
   padding-top: 5px;
 }
 
-#backHome {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  top: 15px;
-  left: 17px;
-  width: 30px;
-  height: 30px;
-  font-size: 20px;
+footer {
+  background: #353535;
+  color: white;
+  padding: 20px 20px 20px 20px;
 }
-
-#menuImage {
-  width: 100%;
-}
-
-.menuCard {
-  background: #F6F6F6;
-  border-radius: 15px 15px 0 0;
+footer i {
+  width: 12px;
+  padding-right: 15px;
 }
 
 /*# sourceMappingURL=style.css.map */
