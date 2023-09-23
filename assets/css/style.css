@@ -7,12 +7,15 @@ footer i {
   width: 12px;
   padding-right: 15px;
 }
+footer .footerLinks {
+  font-weight: 500;
+}
 
 #backHome {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: fixed;
+  position: absolute;
   top: 15px;
   left: 17px;
   width: 30px;
@@ -24,9 +27,53 @@ footer i {
   width: 100%;
 }
 
+.entete {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .menuCard {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: -60px;
   background: #F6F6F6;
-  border-radius: 15px 15px 0 0;
+  border-radius: 25px 25px 0 0;
+  padding: 0 15px;
+}
+.menuCard .categorie {
+  margin-bottom: 40px;
+}
+.menuCard .categorie h2 {
+  font-weight: 300;
+}
+.menuCard .card {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  background: white;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+.menuCard .card .detailsPlat {
+  display: flex;
+  justify-content: space-between;
+}
+.menuCard .card h3, .menuCard .card p {
+  margin: 0;
+}
+
+.commander {
+  display: flex;
+  justify-content: center;
+  background: #F6F6F6;
+}
+
+.purpleButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 * {
@@ -35,12 +82,19 @@ footer i {
 }
 * .title {
   font-size: 24px;
+  font-weight: 700;
+}
+* .titleMenu {
+  font-size: 28px;
+  font-family: "Shrikhand", cursive;
 }
 * .titleCard {
   font-size: 18px;
+  font-weight: 700;
 }
 * .subtitle {
   font-size: 17px;
+  font-weight: 300;
 }
 * .titleFooter {
   font-size: 18px;
@@ -88,7 +142,12 @@ header {
 .accueil h1 {
   margin: 0;
 }
-.accueil a {
+.accueil p {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.purpleButton {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -133,6 +192,9 @@ header {
   align-items: center;
   border-radius: 50%;
   translate: -12px;
+}
+.fonctionnement .card .consigne {
+  font-weight: 500;
 }
 
 .restaurants {
