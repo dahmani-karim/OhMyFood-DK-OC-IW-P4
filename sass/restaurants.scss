@@ -1,0 +1,22 @@
+@import '../sass/main.scss';
+
+#backHome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 15px;
+    left: 17px;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+}
+
+#menuImage {
+    width: 100%
+}
+
+.menuCard {
+    background: $bg-color;
+    border-radius: 15px 15px 0 0;
+}
