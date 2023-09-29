@@ -36,6 +36,7 @@
         margin-bottom: 40px;
         h2 {
             font-weight: 300;
+            margin-bottom: 9px;
         }
     }
     .card {
@@ -60,4 +61,9 @@
     display: flex;
     justify-content: center;
     background: $bg-color;
+}
+
+.line {
+    padding: 0 20px;
+    border-top: solid 3px $tertiaire-color;
 }

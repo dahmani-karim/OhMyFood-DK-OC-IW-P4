@@ -39,6 +39,7 @@
 body {
     margin: 0;
     max-width: 1440px;
+    background: $bg-color;
 }
 
 header {
@@ -92,8 +93,9 @@ header {
 .fonctionnement {
     display: flex;
     flex-direction: column;
-    padding: 0 20px 0 20px;
+    padding: 0 20px 50px 20px;
     margin: 30px 0 50px 0;
+    background: white;
     .notice {
         display: flex;
         flex-direction: column;
@@ -125,8 +127,8 @@ header {
 }
 
 .restaurants {
-    margin: 30px 0 0 0;
-    padding: 18px;
+    padding: 0 18px;
+    margin-bottom: 50px;
     background: $bg-color;
     .card {
         background: white;

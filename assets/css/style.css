@@ -49,6 +49,7 @@ footer .footerLinks {
 }
 .menuCard .categorie h2 {
   font-weight: 300;
+  margin-bottom: 9px;
 }
 .menuCard .card {
   display: flex;
@@ -71,6 +72,11 @@ footer .footerLinks {
   display: flex;
   justify-content: center;
   background: #F6F6F6;
+}
+
+.line {
+  padding: 0 20px;
+  border-top: solid 3px #99E2D0;
 }
 
 * {
@@ -109,6 +115,7 @@ footer .footerLinks {
 body {
   margin: 0;
   max-width: 1440px;
+  background: #F6F6F6;
 }
 
 header {
@@ -162,8 +169,9 @@ header {
 .fonctionnement {
   display: flex;
   flex-direction: column;
-  padding: 0 20px 0 20px;
+  padding: 0 20px 50px 20px;
   margin: 30px 0 50px 0;
+  background: white;
 }
 .fonctionnement .notice {
   display: flex;
@@ -195,8 +203,8 @@ header {
 }
 
 .restaurants {
-  margin: 30px 0 0 0;
-  padding: 18px;
+  padding: 0 18px;
+  margin-bottom: 50px;
   background: #F6F6F6;
 }
 .restaurants .card {
