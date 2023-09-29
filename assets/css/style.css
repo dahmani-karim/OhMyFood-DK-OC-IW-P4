@@ -134,6 +134,14 @@ header {
   box-shadow: inset 0px 2px 4px 0px rgba(0, 0, 0, 0.1490196078);
   height: 50px;
 }
+.location .searchBar {
+  display: block;
+  text-align: center;
+  width: 109px;
+  font-weight: 500;
+  border: none;
+  background: #EAEAEA;
+}
 
 .accueil {
   display: flex;

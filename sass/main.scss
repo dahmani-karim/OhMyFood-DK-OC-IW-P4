@@ -60,6 +60,14 @@ header {
     background-color: $bg-location;
     box-shadow: inset 0px 2px 4px 0px #00000026;
     height: 50px;
+    .searchBar {
+        display: block;
+        text-align: center;
+        width: 109px;
+        font-weight: 500;
+        border: none;
+        background: $bg-location;
+    }
 }
 
 .accueil {
