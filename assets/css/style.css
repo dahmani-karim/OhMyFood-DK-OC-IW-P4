@@ -79,6 +79,19 @@ footer .footerLinks {
   border-top: solid 3px #99E2D0;
 }
 
+body {
+  margin: 0;
+  max-width: 1440px;
+  background: #F6F6F6;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  padding: 14px 0 14px 0;
+  height: 30px;
+}
+
 * {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
@@ -110,19 +123,6 @@ footer .footerLinks {
 }
 * .fa-heart {
   font-size: 22px;
-}
-
-body {
-  margin: 0;
-  max-width: 1440px;
-  background: #F6F6F6;
-}
-
-header {
-  display: flex;
-  justify-content: center;
-  padding: 14px 0 14px 0;
-  height: 30px;
 }
 
 .location {
@@ -164,6 +164,10 @@ header {
   border-radius: 25px;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
   color: white;
+}
+.purpleButton:hover {
+  opacity: 70%;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.4509803922);
 }
 
 .fonctionnement {
