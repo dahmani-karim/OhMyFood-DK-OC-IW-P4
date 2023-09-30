@@ -46,8 +46,14 @@ header {
         text-decoration: none;
         color: inherit;
     }
-    .fa-heart {
-        font-size: 22px;
+    .likeIcon {
+        transition: transform 400ms;
+        &:hover {
+            transform: scale(1.25);
+        }
+        &:active {
+            color: red;
+        }
     }
 }
 
@@ -176,11 +182,6 @@ header {
             padding: 10px 15px 10px 15px;
             h2, p {
                 margin: 5px;
-            }
-            #icon {
-                width: 22px;
-                height: 21px;
-                padding-top: 5px;
             }
         }
     }

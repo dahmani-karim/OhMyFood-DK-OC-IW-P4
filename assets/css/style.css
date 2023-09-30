@@ -31,8 +31,9 @@ footer .footerLinks {
 
 .entete {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  gap: 40px;
+  margin: 0 2px;
 }
 
 .menuCard {
@@ -121,8 +122,14 @@ header {
   text-decoration: none;
   color: inherit;
 }
-* .fa-heart {
-  font-size: 22px;
+* .likeIcon {
+  transition: transform 400ms;
+}
+* .likeIcon:hover {
+  transform: scale(1.25);
+}
+* .likeIcon:active {
+  color: red;
 }
 
 .location {
@@ -252,11 +259,6 @@ header {
 }
 .restaurants .card .content h2, .restaurants .card .content p {
   margin: 5px;
-}
-.restaurants .card .content #icon {
-  width: 22px;
-  height: 21px;
-  padding-top: 5px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -20,8 +20,9 @@
 
 .entete {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    gap: 40px;
+    margin: 0 2px;
 }
 
 .menuCard {
