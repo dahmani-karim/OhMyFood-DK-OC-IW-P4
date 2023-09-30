@@ -208,7 +208,8 @@ header {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  translate: -12px;
+  position: relative;
+  left: -12px;
 }
 .fonctionnement .card .consigne {
   font-weight: 500;
