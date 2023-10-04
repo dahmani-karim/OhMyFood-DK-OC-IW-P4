@@ -9,6 +9,79 @@
 // General
 body {
     margin: 0;
-    max-width: 1440px;
     background: $bg-color;
+    display: flex;
+    justify-content: center;
+}
+
+.main-container {
+    width: 100%;
+    max-width: 1440px;
+}
+
+/****** Media queries ******/
+/* Medium devices (tablets, 768px to 1024px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .location {
+        background-color: red;
+    }
+}
+
+/* Desktop devices (up to 1024px) */
+@media (min-width: 1024px) {
+    
+    .accueil h2 {
+        font-size: 40px;
+    }
+
+    .fonctionnement {
+        padding: 50px 180px;
+        .card {
+            width: 30%;
+        }
+        .notice {
+            display: flex;
+            flex-direction: row;
+        }
+    }
+
+    .restaurants {
+        padding: 0 180px;
+        .cards {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 28px;
+        }
+        a {
+            width: 45%;
+        }
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .footerLinks {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .menuCard {
+        margin: 0 193px;
+        padding: 0 220px;
+    }
+
+    .entete {
+        display: flex;
+        justify-content: center;
+    }
 }
