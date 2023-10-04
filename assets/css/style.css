@@ -3,8 +3,8 @@
 header {
   display: flex;
   justify-content: center;
-  padding: 14px 0 14px 0;
-  height: 30px;
+  align-items: center;
+  height: 63px;
 }
 
 /* Back home arrow */
@@ -31,11 +31,8 @@ footer i {
   width: 12px;
   padding-right: 15px;
 }
-footer .footerLinks {
-  font-weight: 500;
-}
 
-/* Variables colors */
+/* Restauraants Menus*/
 #menuImage {
   width: 100%;
   height: 275px;
@@ -117,6 +114,9 @@ footer .footerLinks {
   font-family: "Shrikhand", cursive;
   margin: 0;
 }
+* .footerLinks {
+  font-weight: 500;
+}
 * a {
   text-decoration: none;
   color: inherit;
@@ -140,12 +140,6 @@ footer .footerLinks {
 .purpleButton:hover {
   opacity: 70%;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.4509803922);
-}
-
-body {
-  margin: 0;
-  max-width: 1440px;
-  background: #F6F6F6;
 }
 
 .location {
@@ -256,6 +250,12 @@ body {
 }
 .restaurants .card .content h3, .restaurants .card .content p {
   margin: 5px;
+}
+
+body {
+  margin: 0;
+  max-width: 1440px;
+  background: #F6F6F6;
 }
 
 /*# sourceMappingURL=style.css.map */
