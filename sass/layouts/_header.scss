@@ -1,6 +1,20 @@
+/* Header ban */
 header {
     display: flex;
     justify-content: center;
     padding: 14px 0 14px 0;
     height: 30px;
+}
+
+/* Back home arrow */
+#backHome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 15px;
+    left: 17px;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
 }

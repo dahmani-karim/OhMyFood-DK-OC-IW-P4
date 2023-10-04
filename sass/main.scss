@@ -38,7 +38,7 @@ body {
     align-items: center;
     padding: 30px;
     background-color: $bg-color;
-    h1 {
+    h2 {
         margin: 0;
     }
     p {
@@ -116,7 +116,7 @@ body {
             display: flex;
             justify-content: space-between;
             padding: 10px 15px 10px 15px;
-            h2, p {
+            h3, p {
                 margin: 5px;
             }
         }

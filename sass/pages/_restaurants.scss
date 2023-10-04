@@ -1,17 +1,5 @@
 @import '../utils/variables.scss';
 
-#backHome {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 15px;
-    left: 17px;
-    width: 30px;
-    height: 30px;
-    font-size: 20px;
-}
-
 #menuImage {
     width: 100%;
     height: 275px;
@@ -35,7 +23,7 @@
     padding: 0 15px;
     .categorie {
         margin-bottom: 40px;
-        h2 {
+        h3 {
             font-weight: 300;
             margin-bottom: 9px;
         }
@@ -52,16 +40,14 @@
             display: flex;
             justify-content: space-between;
         }
-        h3, p {
+        h4, p {
             margin: 0;
         }
+    } 
+    .commander {
+        display: flex;
+        justify-content: center;
     }
-}
-
-.commander {
-    display: flex;
-    justify-content: center;
-    background: $bg-color;
 }
 
 .line {
