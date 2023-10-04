@@ -1,4 +1,4 @@
-@import '../sass/variables.scss';
+@import '../utils/variables.scss';
 
 #backHome {
     display: flex;
@@ -66,5 +66,5 @@
 
 .line {
     padding: 0 20px;
-    border-top: solid 3px $tertiaire-color;
+    border-top: solid 3px $tertiary-color;
 }

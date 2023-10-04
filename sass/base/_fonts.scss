@@ -1,0 +1,30 @@
+// Font Style
+* {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    .title {
+        font-size: 24px;
+        font-weight: 700;
+    }
+    .titleMenu {
+        font-size: 28px;
+        font-family: 'Shrikhand', cursive;
+    }
+    .titleCard {
+        font-size: 18px;
+        font-weight: 700;
+    }
+    .subtitle{
+        font-size: 17px;
+        font-weight: 300;
+    }
+    .titleFooter {
+        font-size: 18px;
+        font-family: 'Shrikhand', cursive;
+        margin: 0;
+    }
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+}
