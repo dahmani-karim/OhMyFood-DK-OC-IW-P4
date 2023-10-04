@@ -9,11 +9,8 @@ header {
 
 /* Back home arrow */
 #backHome {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 15px;
+  position: fixed;
+  top: 20px;
   left: 17px;
   width: 30px;
   height: 30px;
