@@ -270,6 +270,10 @@ footer i {
   position: absolute;
   z-index: inherit;
   opacity: 0%;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 .fav .liked:hover {
@@ -281,6 +285,33 @@ body {
   background: #F6F6F6;
   display: flex;
   justify-content: center;
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: #F6F6F6;
+  animation: loading 5s 2s forwards;
+}
+@keyframes loading {
+  0% {
+    transform: rotateX(360deg);
+  }
+  25% {
+    opacity: 80%;
+  }
+  50% {
+    opacity: 40%;
+  }
+  100% {
+    opacity: 0%;
+    z-index: -5;
+  }
 }
 
 .main-container {
