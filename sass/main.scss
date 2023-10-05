@@ -5,6 +5,7 @@
 @import '../sass/base/fonts';
 @import '../sass/components/buttons';
 @import '../sass/pages/home';
+@import '../sass/components/favorite';
 
 // General
 body {
@@ -21,15 +22,38 @@ body {
 
 /****** Media queries ******/
 /* Medium devices (tablets, 768px to 1024px) */
-@media (min-width: 768px) and (max-width: 1023px) {
-    .location {
-        background-color: red;
+@media (min-width: 768px) {
+    .restaurants {
+        padding: 0 50px;
+        .cards {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 28px;
+        }
+        a {
+            width: 45%;
+        }
+    }
+
+    .fonctionnement {
+        padding: 50px;
+    }
+
+    .menuCard {
+        margin: 0 193px;
+        padding: 0 20px;
+    }
+
+    .entete {
+        display: flex;
+        justify-content: center;
     }
 }
 
 /* Desktop devices (up to 1024px) */
 @media (min-width: 1024px) {
-    
     .accueil h2 {
         font-size: 40px;
     }
@@ -47,16 +71,6 @@ body {
 
     .restaurants {
         padding: 0 180px;
-        .cards {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            gap: 28px;
-        }
-        a {
-            width: 45%;
-        }
     }
 
     footer {
@@ -76,8 +90,8 @@ body {
     }
 
     .menuCard {
-        margin: 0 193px;
-        padding: 0 220px;
+        margin: -40px 193px 0 193px;
+        padding: 0 100px;
     }
 
     .entete {

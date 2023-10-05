@@ -1,0 +1,14 @@
+// Favorite function with transition for like and unlike
+.fav {
+    display: flex;
+    align-items: center;
+    .liked {
+        position: absolute;
+        z-index: inherit;
+        opacity: 0%;
+        transition: all .5s ease;
+        &:hover {
+            opacity: 100%;
+        }
+    }
+}
