@@ -5,6 +5,7 @@ header {
   justify-content: center;
   align-items: center;
   height: 63px;
+  position: relative;
 }
 
 /* Back home arrow */
@@ -220,6 +221,7 @@ footer i {
   border-radius: 15px;
   margin-bottom: 15px;
   height: 250px;
+  position: relative;
 }
 .restaurants .card .photo {
   width: 100%;
@@ -233,11 +235,11 @@ footer i {
   align-items: center;
   width: 80px;
   height: 29px;
-  position: absolute;
-  right: 33px;
   background: #99E2D0;
   color: #008766;
   border-radius: 2px;
+  position: absolute;
+  right: 33px;
   margin-top: 13px;
 }
 .restaurants .card .content {
