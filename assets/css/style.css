@@ -313,26 +313,56 @@ body {
   z-index: 1;
   width: 100%;
   height: 100%;
-  background-color: #F6F6F6;
-  animation: loading 3s 1s forwards;
+  background: linear-gradient(0deg, #9356DC -11.44%, #FF79DA 123.93%);
+  animation: loading 2.5s 2.25s both;
 }
 @keyframes loading {
   0% {
-    transform: rotateX(360deg);
+    opacity: 100%;
   }
-  25% {
-    opacity: 80%;
-  }
-  50% {
-    opacity: 40%;
+  99% {
+    opacity: 0%;
   }
   100% {
     opacity: 0%;
-    z-index: -5;
+    display: none;
   }
 }
 .loader img {
   height: 120%;
+}
+.loader .bowl1 {
+  animation: loading-bowl 0.75s 0s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+@keyframes loading-bowl {
+  0% {
+    transform: translateX(-1000px);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+.loader .bowl2 {
+  animation: loading-bowl 1.5s 0s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+@keyframes loading-bowl {
+  0% {
+    transform: translateX(-1000px);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+.loader .bowl3 {
+  animation: loading-bowl 2.25s 0s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+@keyframes loading-bowl {
+  0% {
+    transform: translateX(-1000px);
+  }
+  100% {
+    transform: translateX(0%);
+  }
 }
 
 .main-container {
