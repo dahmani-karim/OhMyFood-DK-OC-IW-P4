@@ -125,6 +125,10 @@ footer i {
   text-decoration: none;
   color: inherit;
 }
+* .etiquette {
+  font-size: 14px;
+  font-weight: 500;
+}
 
 /* Buttons design */
 .purpleButton {
@@ -134,7 +138,7 @@ footer i {
   width: 218px;
   height: 50px;
   font-weight: 500;
-  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  background: linear-gradient(0deg, #9356DC -11.44%, #FF79DA 123.93%);
   padding: 0;
   border: none;
   border-radius: 25px;
@@ -250,7 +254,7 @@ footer i {
   color: #008766;
   border-radius: 2px;
   position: absolute;
-  right: 33px;
+  right: 13px;
   margin-top: 13px;
 }
 .restaurants .card .content {
