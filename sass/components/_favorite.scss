@@ -16,5 +16,9 @@
             transform: scale(1);
             opacity: 100%;
         }
+        &:active {
+            transform: scale(1.5);
+            opacity: 100%;
+        }
     }
 }

@@ -18,6 +18,9 @@ header {
   height: 30px;
   font-size: 20px;
 }
+#backHome:active {
+  transform: scale(0.9);
+}
 
 /* Footer config */
 /* Variables colors */
@@ -152,7 +155,10 @@ footer i {
 }
 .purpleButton:hover {
   opacity: 70%;
-  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.4509803922);
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.5490196078);
+}
+.purpleButton:active {
+  transform: scale(0.9);
 }
 
 .location {
@@ -283,6 +289,10 @@ footer i {
 }
 .fav .liked:hover {
   transform: scale(1);
+  opacity: 100%;
+}
+.fav .liked:active {
+  transform: scale(1.5);
   opacity: 100%;
 }
 
