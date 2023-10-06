@@ -20,7 +20,6 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 15px;
     position: absolute;
     z-index: 1;
     width: 100%;
@@ -42,7 +41,13 @@ body {
     img {
         height: 120%;
     }
+    i {
+        font-size: 40px;
+        margin: 40px 10px;
+    }
     .bowl1 {
+        color: $tertiary-color;
+        background-clip: text;
         animation: loading-bowl .75s 0s cubic-bezier(0.68, -0.55, 0.27, 1.55);
         @keyframes loading-bowl {
             0% {
@@ -54,6 +59,8 @@ body {
         }
     }
     .bowl2 {
+        color: $secondary-color;
+        background-clip: text;
         animation: loading-bowl 1.5s 0s  cubic-bezier(0.68, -0.55, 0.27, 1.55);
         @keyframes loading-bowl {
             0% {
@@ -65,6 +72,8 @@ body {
         }
     }
     .bowl3 {
+        color: $primary-color;
+        background-clip: text;
         animation: loading-bowl 2.25s 0s  cubic-bezier(0.68, -0.55, 0.27, 1.55);
         @keyframes loading-bowl {
             0% {

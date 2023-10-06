@@ -308,7 +308,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 15px;
   position: absolute;
   z-index: 1;
   width: 100%;
@@ -331,7 +330,13 @@ body {
 .loader img {
   height: 120%;
 }
+.loader i {
+  font-size: 40px;
+  margin: 40px 10px;
+}
 .loader .bowl1 {
+  color: #99E2D0;
+  background-clip: text;
   animation: loading-bowl 0.75s 0s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
 @keyframes loading-bowl {
@@ -343,6 +348,8 @@ body {
   }
 }
 .loader .bowl2 {
+  color: #FF79DA;
+  background-clip: text;
   animation: loading-bowl 1.5s 0s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
 @keyframes loading-bowl {
@@ -354,6 +361,8 @@ body {
   }
 }
 .loader .bowl3 {
+  color: #9356DC;
+  background-clip: text;
   animation: loading-bowl 2.25s 0s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
 @keyframes loading-bowl {
