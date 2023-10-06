@@ -272,8 +272,9 @@ footer i {
 }
 .fav .liked {
   position: absolute;
-  z-index: inherit;
+  z-index: 1;
   opacity: 0%;
+  transform: scale(0.5);
   -o-transition: all 0.5s ease;
   -ms-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
@@ -281,6 +282,7 @@ footer i {
   transition: all 0.5s ease;
 }
 .fav .liked:hover {
+  transform: scale(1);
   opacity: 100%;
 }
 
@@ -293,14 +295,16 @@ body {
 
 .loader {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 15px;
   position: absolute;
   z-index: 1;
   width: 100%;
   height: 100%;
   background-color: #F6F6F6;
-  animation: loading 5s 2s forwards;
+  animation: loading 3s 1s forwards;
 }
 @keyframes loading {
   0% {
@@ -316,6 +320,9 @@ body {
     opacity: 0%;
     z-index: -5;
   }
+}
+.loader img {
+  height: 120%;
 }
 
 .main-container {
