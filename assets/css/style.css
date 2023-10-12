@@ -12,6 +12,7 @@
 .titleMenu {
   font-size: 28px;
   font-family: "Shrikhand", cursive;
+  font-weight: 400;
 }
 
 .titleCard, .price {
