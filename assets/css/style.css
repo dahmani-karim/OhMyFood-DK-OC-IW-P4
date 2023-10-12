@@ -21,6 +21,7 @@
 }
 * .titleFooter {
   font-size: 18px;
+  font-weight: 400;
   font-family: "Shrikhand", cursive;
   margin: 0;
 }
@@ -234,6 +235,7 @@ footer i {
 }
 .menuCard .card h4, .menuCard .card p {
   margin: 0;
+  text-overflow: ellipsis;
 }
 .menuCard .commander {
   display: flex;
