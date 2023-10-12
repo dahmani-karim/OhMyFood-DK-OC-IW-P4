@@ -2,6 +2,9 @@
 .fav {
     display: flex;
     align-items: center;
+    position: absolute;
+    right: 15px;
+    bottom: 25px;
     .liked {
         position: absolute;
         z-index: 1;

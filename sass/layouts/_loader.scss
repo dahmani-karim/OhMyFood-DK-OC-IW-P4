@@ -1,0 +1,71 @@
+// Loader configuration
+.loader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background: $gradient-color;
+    animation: loading 2.5s 2.25s both;
+    @keyframes loading {
+        0% {
+            opacity: 100%;
+        }
+        99% {
+            opacity: 0%;
+        }
+        100% {
+            opacity: 0%;
+            display: none;
+        }
+    }
+    img {
+        height: 120%;
+    }
+    i {
+        font-size: 40px;
+        margin: 40px 10px;
+    }
+    .bowl1 {
+        color: $tertiary-color;
+        background-clip: text;
+        animation: loading-bowl .75s 0s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+        @keyframes loading-bowl {
+            0% {
+                transform: translateX(-1000px);
+            }
+            100% {
+                transform: translateX(0%);
+            }
+        }
+    }
+    .bowl2 {
+        color: $secondary-color;
+        background-clip: text;
+        animation: loading-bowl 1.5s 0s  cubic-bezier(0.68, -0.55, 0.27, 1.55);
+        @keyframes loading-bowl {
+            0% {
+                transform: translateX(-1000px);
+            }
+            100% {
+                transform: translateX(0%);
+            }
+        }
+    }
+    .bowl3 {
+        color: $primary-color;
+        background-clip: text;
+        animation: loading-bowl 2.25s 0s  cubic-bezier(0.68, -0.55, 0.27, 1.55);
+        @keyframes loading-bowl {
+            0% {
+                transform: translateX(-1000px);
+            }
+            100% {
+                transform: translateX(0%);
+            }
+        }
+    }
+}
