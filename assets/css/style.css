@@ -61,7 +61,7 @@ header {
 }
 
 /* Footer config */
-/* Variables colors */
+/* Variables colors and effects */
 footer {
   background: #353535;
   color: white;
@@ -72,7 +72,7 @@ footer i {
   padding-right: 15px;
 }
 
-/* Variables colors */
+/* Variables colors and effects */
 .loader {
   display: flex;
   flex-direction: column;
@@ -144,7 +144,7 @@ footer i {
   }
 }
 
-/* Variables colors */
+/* Variables colors and effects */
 .location {
   display: flex;
   justify-content: center;
@@ -257,7 +257,7 @@ footer i {
   margin: 5px;
 }
 
-/* Variables colors */
+/* Variables colors and effects */
 /* Menus of Restaurants*/
 .menu-background {
   background-color: white;
@@ -320,7 +320,7 @@ footer i {
   border-top: solid 3px #99E2D0;
 }
 
-/* Variables colors */
+/* Variables colors and effects */
 /* Buttons design */
 .purpleButton {
   display: flex;
@@ -442,7 +442,7 @@ footer i {
     justify-content: center;
   }
 }
-/* Variables colors */
+/* Variables colors and effects */
 body {
   margin: 0;
   background: #F6F6F6;
