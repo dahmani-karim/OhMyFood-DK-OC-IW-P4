@@ -2,24 +2,30 @@
 .fav {
     display: flex;
     align-items: center;
+}
+
+.favHome {
+    display: flex;
+    align-items: center;
     position: absolute;
     right: 15px;
     bottom: 25px;
-    .liked {
-        position: absolute;
-        z-index: 1;
-        opacity: 0%;
-        transform: scale(0.5);
-        transition: all .5s ease;
-        // colorize hearts on hover
-        &:hover {
-            transform: scale(1);
-            opacity: 100%;
-        }
-        // scale on click to simulate like
-        &:active {
-            transform: scale(1.5);
-            opacity: 100%;
-        }
+}
+
+.liked {
+    position: absolute;
+    z-index: 1;
+    opacity: 0%;
+    transform: scale(0.5);
+    transition: all .5s ease;
+    // colorize hearts on hover
+    &:hover {
+        transform: scale(1);
+        opacity: 100%;
+    }
+    // scale on click to simulate like
+    &:active {
+        transform: scale(1.5);
+        opacity: 100%;
     }
 }
