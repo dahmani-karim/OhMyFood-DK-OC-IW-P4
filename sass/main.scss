@@ -1,11 +1,11 @@
-@import '../sass/utils/variables';
-@import '../sass/layouts/header';
-@import '../sass/layouts/footer';
-@import '../sass/pages/restaurants';
-@import '../sass/base/fonts';
-@import '../sass/components/buttons';
-@import '../sass/pages/home';
-@import '../sass/components/favorite';
+@use '../sass/utils/variables';
+@use '../sass/layouts/header';
+@use '../sass/layouts/footer';
+@use '../sass/pages/restaurants';
+@use '../sass/base/fonts';
+@use '../sass/components/buttons';
+@use '../sass/pages/home';
+@use '../sass/components/favorite';
 
 // General
 body {
