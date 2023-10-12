@@ -372,7 +372,8 @@ footer i {
   opacity: 100%;
 }
 
-/****** Media queries ******/
+/*** Responsive Design Configuration ***/
+/** Media queries **/
 /* Medium devices (tablets, 768px to 1024px) */
 @media (min-width: 768px) {
   .restaurants {
