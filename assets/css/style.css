@@ -267,6 +267,14 @@ footer i {
 
 /* Variables colors and effects */
 /* Menus of Restaurants*/
+@keyframes slideLtoR {
+  0% {
+    transform: translateX(-1000px);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
 .menu-background {
   background-color: white;
 }
@@ -294,6 +302,7 @@ footer i {
   padding: 0 15px;
 }
 .menuCard .categorie {
+  transform: translateX(-1000px);
   margin-bottom: 40px;
 }
 .menuCard .categorie h3 {
@@ -331,6 +340,18 @@ footer i {
 .line {
   padding: 0 20px;
   border-top: solid 3px #99E2D0;
+}
+
+.entree {
+  animation: slideLtoR 0.75s 0s ease forwards;
+}
+
+.plat {
+  animation: slideLtoR 0.75s 1s ease forwards;
+}
+
+.dessert {
+  animation: slideLtoR 0.75s 2s ease forwards;
 }
 
 /* Variables colors and effects */
