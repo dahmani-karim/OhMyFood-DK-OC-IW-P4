@@ -361,10 +361,6 @@ footer i {
   z-index: 1;
   opacity: 0%;
   transform: scale(0.5);
-  -o-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 .fav .liked:hover {
