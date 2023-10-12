@@ -35,41 +35,43 @@
     background: $bg-color;
     border-radius: 25px 25px 0 0;
     padding: 0 15px;
-    .categorie {
-        transform: translateX(-1000px);
-        margin-bottom: 40px;
-        h3 {
-            font-weight: 300;
-            margin-bottom: 9px;
-        }
+}
+
+.categorie {
+    transform: translateX(-1000px);
+    margin-bottom: 40px;
+    h3 {
+        font-weight: 300;
+        margin-bottom: 9px;
     }
-    .card {
-        display: flex;
-        flex-direction: column;
-        padding: 15px;
-        background: white;
-        border-radius: 15px;
-        margin-bottom: 15px;
-        box-shadow: $box-shadow;
-        .detailsPlat {
-            display: flex;
-            justify-content: space-between;
-        }
-        h4 {
-            margin: 0;
-            max-width: 80%;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-        }
-        p{
-            margin: 0;
-        }
-    } 
-    .commander {
-        display: flex;
-        justify-content: center;
-        margin-bottom: 50px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    background: white;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    box-shadow: $box-shadow;
+    h4 {
+        margin: 0;
+        max-width: 80%;
     }
+    p {
+        margin: 0;
+    }
+}
+
+.detailsPlat {
+    display: flex;
+    justify-content: space-between;
+}
+
+.commander {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
 }
 
 .line {

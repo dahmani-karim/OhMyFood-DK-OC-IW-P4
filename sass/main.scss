@@ -8,16 +8,3 @@
 @use './components/favorite';
 @use './utils/responsive';
 @import './utils/variables';
-
-// General
-body {
-    margin: 0;
-    background: $bg-color;
-    display: flex;
-    justify-content: center;
-}
-
-.main-container {
-    width: 100%;
-    max-width: 1440px;
-}

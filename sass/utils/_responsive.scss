@@ -1,8 +1,21 @@
-/*** Responsive Design Configuration ***/
+@import '../utils/variables';
 
+/*** Responsive Design Configuration ***/
+/** General **/
+body {
+    margin: 0;
+    background: $bg-color;
+    display: flex;
+    justify-content: center;
+}
+
+.main-container {
+    width: 100%;
+    max-width: 1440px;
+}
 /** Media queries **/
 /* Medium devices (tablets, 768px to 1024px) */
-@media (min-width: 768px) {
+@media (min-width: $medium) {
     .restaurants {
         padding: 0 50px;
         .cards {
@@ -49,14 +62,14 @@
 }
 
 /* Desktop devices (up to 1024px) */
-@media (min-width: 1024px) {
+@media (min-width: $large) {
     .accueil h2 {
         font-size: 40px;
     }
 
     .fonctionnement {
         padding: 50px 180px;
-        .card {
+        .step {
             width: 30%;
         }
         .notice {
