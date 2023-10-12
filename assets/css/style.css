@@ -1,18 +1,462 @@
-/* Error: Undefined variable.
- *    ,
- * 11 |     background: $gradient-color;
- *    |                 ^^^^^^^^^^^^^^^
- *    '
- *   sass\layouts\_loader.scss 11:17  @use
- *   sass\main.scss 4:1               root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 11 \2502      background: $gradient-color;\d\a    \2502                  ^^^^^^^^^^^^^^^\a    \2575 \a   sass\\layouts\\_loader.scss 11:17  @use\a   sass\\main.scss 4:1               root stylesheet";
+/* Fonts style */
+* {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
 }
+* .title {
+  font-size: 24px;
+  font-weight: 700;
+}
+* .titleMenu {
+  font-size: 28px;
+  font-family: "Shrikhand", cursive;
+}
+* .titleCard {
+  font-size: 18px;
+  font-weight: 700;
+}
+* .subtitle {
+  font-size: 17px;
+  font-weight: 300;
+}
+* .titleFooter {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Shrikhand", cursive;
+  margin: 0;
+}
+* .footerLinks {
+  font-weight: 500;
+}
+* a {
+  text-decoration: none;
+  color: inherit;
+}
+* .etiquette {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Header ban */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 63px;
+  position: relative;
+  background-color: white;
+}
+
+/* Back home arrow */
+#backHome {
+  position: absolute;
+  top: 20px;
+  left: 17px;
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+}
+#backHome:active {
+  transform: scale(0.9);
+}
+
+/* Footer config */
+/* Variables colors */
+footer {
+  background: #353535;
+  color: white;
+  padding: 20px 20px 20px 20px;
+}
+footer i {
+  width: 12px;
+  padding-right: 15px;
+}
+
+/* Variables colors */
+.loader {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, #9356DC -11.44%, #FF79DA 123.93%);
+  animation: loading 2.5s 2.25s both;
+}
+@keyframes loading {
+  0% {
+    opacity: 100%;
+  }
+  99% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 0%;
+    display: none;
+  }
+}
+.loader img {
+  height: 120%;
+}
+.loader i {
+  font-size: 40px;
+  margin: 40px 10px;
+}
+.loader .bowl1 {
+  color: #99E2D0;
+  background-clip: text;
+  animation: loading-bowl 0.75s 0s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+@keyframes loading-bowl {
+  0% {
+    transform: translateX(-1000px);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+.loader .bowl2 {
+  color: #FF79DA;
+  background-clip: text;
+  animation: loading-bowl 1.5s 0s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+@keyframes loading-bowl {
+  0% {
+    transform: translateX(-1000px);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+.loader .bowl3 {
+  color: #9356DC;
+  background-clip: text;
+  animation: loading-bowl 2.25s 0s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+@keyframes loading-bowl {
+  0% {
+    transform: translateX(-1000px);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+/* Variables colors */
+.location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 17px;
+  background-color: #EAEAEA;
+  box-shadow: inset 0px 2px 4px 0px rgba(0, 0, 0, 0.1490196078);
+  height: 50px;
+}
+.location .searchBar {
+  display: block;
+  text-align: center;
+  width: 109px;
+  font-weight: 500;
+  border: none;
+  background: #EAEAEA;
+}
+
+.accueil {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  padding: 30px;
+  background-color: #F6F6F6;
+}
+.accueil h2 {
+  margin: 0;
+}
+.accueil p {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.fonctionnement {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px 50px 20px;
+  margin: 30px 0 50px 0;
+  background: white;
+}
+.fonctionnement .notice {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 20px;
+}
+.fonctionnement .card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: #F6F6F6;
+  border-radius: 20px;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
+  padding: 10px 0;
+}
+.fonctionnement .card .number {
+  background: #9356DC;
+  color: white;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  position: relative;
+  left: -12px;
+}
+.fonctionnement .card .consigne {
+  font-weight: 500;
+}
+
+.restaurants {
+  padding: 0 18px;
+  margin-bottom: 50px;
+  background: #F6F6F6;
+}
+.restaurants .card {
+  background: white;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  height: 250px;
+  position: relative;
+}
+.restaurants .card .photo {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+.restaurants .card .etiquette {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 29px;
+  background: #99E2D0;
+  color: #008766;
+  border-radius: 2px;
+  position: absolute;
+  right: 13px;
+  margin-top: 13px;
+}
+.restaurants .card .content {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15px 10px 15px;
+}
+.restaurants .card .content h3, .restaurants .card .content p {
+  margin: 5px;
+}
+
+/* Variables colors */
+/* Menus of Restaurants*/
+.menu-background {
+  background-color: white;
+}
+
+#menuImage {
+  width: 100%;
+  height: 275px;
+  object-fit: cover;
+}
+
+.entete {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin: 0 2px;
+}
+
+.menuCard {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-top: -40px;
+  background: #F6F6F6;
+  border-radius: 25px 25px 0 0;
+  padding: 0 15px;
+}
+.menuCard .categorie {
+  margin-bottom: 40px;
+}
+.menuCard .categorie h3 {
+  font-weight: 300;
+  margin-bottom: 9px;
+}
+.menuCard .card {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  background: white;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
+}
+.menuCard .card .detailsPlat {
+  display: flex;
+  justify-content: space-between;
+}
+.menuCard .card h4, .menuCard .card p {
+  margin: 0;
+  text-overflow: ellipsis;
+}
+.menuCard .commander {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.line {
+  padding: 0 20px;
+  border-top: solid 3px #99E2D0;
+}
+
+/* Variables colors */
+/* Buttons design */
+.purpleButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 218px;
+  height: 50px;
+  font-weight: 500;
+  background: linear-gradient(0deg, #9356DC -11.44%, #FF79DA 123.93%);
+  padding: 0;
+  border: none;
+  border-radius: 25px;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
+  color: white;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.purpleButton:hover {
+  opacity: 70%;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.5490196078);
+}
+.purpleButton:active {
+  transform: scale(0.9);
+}
+
+.fav {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 15px;
+  bottom: 25px;
+}
+.fav .liked {
+  position: absolute;
+  z-index: 1;
+  opacity: 0%;
+  transform: scale(0.5);
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.fav .liked:hover {
+  transform: scale(1);
+  opacity: 100%;
+}
+.fav .liked:active {
+  transform: scale(1.5);
+  opacity: 100%;
+}
+
+/* Variables colors */
+body {
+  margin: 0;
+  background: #F6F6F6;
+  display: flex;
+  justify-content: center;
+}
+
+.main-container {
+  width: 100%;
+  max-width: 1440px;
+}
+
+/****** Media queries ******/
+/* Medium devices (tablets, 768px to 1024px) */
+@media (min-width: 768px) {
+  .restaurants {
+    padding: 0 50px;
+  }
+  .restaurants .cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 28px;
+  }
+  .restaurants article {
+    width: 45%;
+  }
+  .fonctionnement {
+    padding: 50px;
+  }
+  .menuCard {
+    margin: 0 193px;
+    padding: 0 20px;
+  }
+  .entete {
+    display: flex;
+    justify-content: center;
+  }
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+  }
+  .footerLinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 16px;
+  }
+}
+/* Desktop devices (up to 1024px) */
+@media (min-width: 1024px) {
+  .accueil h2 {
+    font-size: 40px;
+  }
+  .fonctionnement {
+    padding: 50px 180px;
+  }
+  .fonctionnement .card {
+    width: 30%;
+  }
+  .fonctionnement .notice {
+    display: flex;
+    flex-direction: row;
+  }
+  .restaurants {
+    padding: 0 180px;
+  }
+  .menuCard {
+    margin: -40px 193px 0 193px;
+    padding: 0 100px;
+  }
+  .entete {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
