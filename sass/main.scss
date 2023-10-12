@@ -1,11 +1,11 @@
-@use '../sass/utils/variables';
-@use '../sass/layouts/header';
-@use '../sass/layouts/footer';
-@use '../sass/pages/restaurants';
-@use '../sass/base/fonts';
-@use '../sass/components/buttons';
-@use '../sass/pages/home';
-@use '../sass/components/favorite';
+@use './base/fonts';
+@use './layouts/header';
+@use './layouts/footer';
+@use './pages/home';
+@use './pages/restaurants';
+@use './components/buttons';
+@use './components/favorite';
+@import './utils/variables';
 
 // General
 body {
@@ -121,6 +121,22 @@ body {
         display: flex;
         justify-content: center;
     }
+
+    footer {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .footerLinks {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 16px;
+    }
 }
 
 /* Desktop devices (up to 1024px) */
@@ -142,22 +158,6 @@ body {
 
     .restaurants {
         padding: 0 180px;
-    }
-
-    footer {
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: flex-start;
-        align-items: center;
-        gap: 20px;
-    }
-
-    .footerLinks {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: center;
-        gap: 16px;
     }
 
     .menuCard {

@@ -1,4 +1,41 @@
-/* Variables colors */
+/* Fonts style */
+* {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+* .title {
+  font-size: 24px;
+  font-weight: 700;
+}
+* .titleMenu {
+  font-size: 28px;
+  font-family: "Shrikhand", cursive;
+}
+* .titleCard {
+  font-size: 18px;
+  font-weight: 700;
+}
+* .subtitle {
+  font-size: 17px;
+  font-weight: 300;
+}
+* .titleFooter {
+  font-size: 18px;
+  font-family: "Shrikhand", cursive;
+  margin: 0;
+}
+* .footerLinks {
+  font-weight: 500;
+}
+* a {
+  text-decoration: none;
+  color: inherit;
+}
+* .etiquette {
+  font-size: 14px;
+  font-weight: 500;
+}
+
 /* Header ban */
 header {
   display: flex;
@@ -34,6 +71,120 @@ footer i {
   padding-right: 15px;
 }
 
+/* Variables colors */
+.location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 17px;
+  background-color: #EAEAEA;
+  box-shadow: inset 0px 2px 4px 0px rgba(0, 0, 0, 0.1490196078);
+  height: 50px;
+}
+.location .searchBar {
+  display: block;
+  text-align: center;
+  width: 109px;
+  font-weight: 500;
+  border: none;
+  background: #EAEAEA;
+}
+
+.accueil {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  padding: 30px;
+  background-color: #F6F6F6;
+}
+.accueil h2 {
+  margin: 0;
+}
+.accueil p {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.fonctionnement {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px 50px 20px;
+  margin: 30px 0 50px 0;
+  background: white;
+}
+.fonctionnement .notice {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 20px;
+}
+.fonctionnement .card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: #F6F6F6;
+  border-radius: 20px;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
+  padding: 10px 0;
+}
+.fonctionnement .card .number {
+  background: #9356DC;
+  color: white;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  position: relative;
+  left: -12px;
+}
+.fonctionnement .card .consigne {
+  font-weight: 500;
+}
+
+.restaurants {
+  padding: 0 18px;
+  margin-bottom: 50px;
+  background: #F6F6F6;
+}
+.restaurants .card {
+  background: white;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  height: 250px;
+  position: relative;
+}
+.restaurants .card .photo {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+.restaurants .card .etiquette {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 29px;
+  background: #99E2D0;
+  color: #008766;
+  border-radius: 2px;
+  position: absolute;
+  right: 13px;
+  margin-top: 13px;
+}
+.restaurants .card .content {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15px 10px 15px;
+}
+.restaurants .card .content h3, .restaurants .card .content p {
+  margin: 5px;
+}
+
+/* Variables colors */
 /* Menus of Restaurants*/
 .menu-background {
   background-color: white;
@@ -95,44 +246,7 @@ footer i {
   border-top: solid 3px #99E2D0;
 }
 
-/* Fonts style */
-* {
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-}
-* .title {
-  font-size: 24px;
-  font-weight: 700;
-}
-* .titleMenu {
-  font-size: 28px;
-  font-family: "Shrikhand", cursive;
-}
-* .titleCard {
-  font-size: 18px;
-  font-weight: 700;
-}
-* .subtitle {
-  font-size: 17px;
-  font-weight: 300;
-}
-* .titleFooter {
-  font-size: 18px;
-  font-family: "Shrikhand", cursive;
-  margin: 0;
-}
-* .footerLinks {
-  font-weight: 500;
-}
-* a {
-  text-decoration: none;
-  color: inherit;
-}
-* .etiquette {
-  font-size: 14px;
-  font-weight: 500;
-}
-
+/* Variables colors */
 /* Buttons design */
 .purpleButton {
   display: flex;
@@ -161,117 +275,6 @@ footer i {
   transform: scale(0.9);
 }
 
-.location {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 17px;
-  background-color: #EAEAEA;
-  box-shadow: inset 0px 2px 4px 0px rgba(0, 0, 0, 0.1490196078);
-  height: 50px;
-}
-.location .searchBar {
-  display: block;
-  text-align: center;
-  width: 109px;
-  font-weight: 500;
-  border: none;
-  background: #EAEAEA;
-}
-
-.accueil {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  align-items: center;
-  padding: 30px;
-  background-color: #F6F6F6;
-}
-.accueil h2 {
-  margin: 0;
-}
-.accueil p {
-  font-size: 18px;
-  font-weight: 300;
-}
-
-.fonctionnement {
-  display: flex;
-  flex-direction: column;
-  padding: 0 20px 50px 20px;
-  margin: 30px 0 50px 0;
-  background: white;
-}
-.fonctionnement .notice {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  gap: 20px;
-}
-.fonctionnement .card {
-  display: flex;
-  gap: 20px;
-  background: #F6F6F6;
-  border-radius: 20px;
-  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
-  padding: 10px 0 10px 0;
-}
-.fonctionnement .card .number {
-  background: #9356DC;
-  color: white;
-  width: 24px;
-  height: 24px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  position: relative;
-  left: -12px;
-}
-.fonctionnement .card .consigne {
-  font-weight: 500;
-}
-
-.restaurants {
-  padding: 0 18px;
-  margin-bottom: 50px;
-  background: #F6F6F6;
-}
-.restaurants .card {
-  background: white;
-  border-radius: 15px;
-  margin-bottom: 15px;
-  height: 250px;
-  position: relative;
-}
-.restaurants .card .photo {
-  width: 100%;
-  height: 70%;
-  object-fit: cover;
-  border-radius: 15px 15px 0 0;
-}
-.restaurants .card .etiquette {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 80px;
-  height: 29px;
-  background: #99E2D0;
-  color: #008766;
-  border-radius: 2px;
-  position: absolute;
-  right: 13px;
-  margin-top: 13px;
-}
-.restaurants .card .content {
-  display: flex;
-  justify-content: space-between;
-  padding: 10px 15px 10px 15px;
-}
-.restaurants .card .content h3, .restaurants .card .content p {
-  margin: 5px;
-}
-
 .fav {
   display: flex;
   align-items: center;
@@ -296,6 +299,7 @@ footer i {
   opacity: 100%;
 }
 
+/* Variables colors */
 body {
   margin: 0;
   background: #F6F6F6;
@@ -406,6 +410,20 @@ body {
     display: flex;
     justify-content: center;
   }
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+  }
+  .footerLinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 16px;
+  }
 }
 /* Desktop devices (up to 1024px) */
 @media (min-width: 1024px) {
@@ -424,20 +442,6 @@ body {
   }
   .restaurants {
     padding: 0 180px;
-  }
-  footer {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 20px;
-  }
-  .footerLinks {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 16px;
   }
   .menuCard {
     margin: -40px 193px 0 193px;
