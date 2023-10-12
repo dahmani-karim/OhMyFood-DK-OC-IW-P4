@@ -376,19 +376,6 @@ footer i {
   opacity: 100%;
 }
 
-/* Variables colors */
-body {
-  margin: 0;
-  background: #F6F6F6;
-  display: flex;
-  justify-content: center;
-}
-
-.main-container {
-  width: 100%;
-  max-width: 1440px;
-}
-
 /****** Media queries ******/
 /* Medium devices (tablets, 768px to 1024px) */
 @media (min-width: 768px) {
@@ -457,6 +444,18 @@ body {
     display: flex;
     justify-content: center;
   }
+}
+/* Variables colors */
+body {
+  margin: 0;
+  background: #F6F6F6;
+  display: flex;
+  justify-content: center;
+}
+
+.main-container {
+  width: 100%;
+  max-width: 1440px;
 }
 
 /*# sourceMappingURL=style.css.map */
