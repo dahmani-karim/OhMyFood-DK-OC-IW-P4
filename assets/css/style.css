@@ -313,7 +313,13 @@ footer i {
   display: flex;
   justify-content: space-between;
 }
-.menuCard .card h4, .menuCard .card p {
+.menuCard .card h4 {
+  margin: 0;
+  max-width: 80%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.menuCard .card p {
   margin: 0;
 }
 .menuCard .commander {
