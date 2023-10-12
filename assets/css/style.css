@@ -184,6 +184,11 @@ footer i {
 .restaurants .card .content h3, .restaurants .card .content p {
   margin: 5px;
 }
+.restaurants .card .fav {
+  position: absolute;
+  right: 15px;
+  bottom: 25px;
+}
 
 /* Variables colors */
 /* Menus of Restaurants*/
@@ -398,7 +403,7 @@ body {
     justify-content: space-between;
     gap: 28px;
   }
-  .restaurants a {
+  .restaurants article {
     width: 45%;
   }
   .fonctionnement {
