@@ -321,12 +321,13 @@ footer i {
 
 .card {
   display: flex;
-  flex-direction: column;
-  padding: 15px;
+  justify-content: space-between;
+  padding-left: 15px;
   background: white;
   border-radius: 15px;
   margin-bottom: 15px;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
+  overflow: hidden;
 }
 .card h4 {
   margin: 0;
@@ -335,10 +336,16 @@ footer i {
 .card p {
   margin: 0;
 }
+.card:hover .checker {
+  transform: translateX(-60px);
+}
 
 .detailsPlat {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
+  width: 80%;
+  padding: 15px 0;
 }
 
 .commander {
@@ -350,6 +357,24 @@ footer i {
 .line {
   padding: 0 20px;
   border-top: solid 3px #99E2D0;
+}
+
+.checker {
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease-out;
+}
+
+.fa-circle-check {
+  font-size: 20px;
+  background-clip: text;
+  background: #99E2D0;
+  height: 100%;
+  margin-left: 15px;
+  margin-right: -60px;
+  padding: 25px 20px;
+  border-radius: 0 15px 15px 0;
+  color: white;
 }
 
 .entree {

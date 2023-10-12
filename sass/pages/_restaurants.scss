@@ -48,12 +48,13 @@
 
 .card {
     display: flex;
-    flex-direction: column;
-    padding: 15px;
+    justify-content: space-between;
+    padding-left: 15px;
     background: white;
     border-radius: 15px;
     margin-bottom: 15px;
     box-shadow: $box-shadow;
+    overflow: hidden;
     h4 {
         margin: 0;
         max-width: 80%;
@@ -61,11 +62,19 @@
     p {
         margin: 0;
     }
+    &:hover {
+        .checker {
+            transform: translateX(-60px);
+        }
+    }
 }
 
 .detailsPlat {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
+    width: 80%;
+    padding: 15px 0;
 }
 
 .commander {
@@ -77,6 +86,24 @@
 .line {
     padding: 0 20px;
     border-top: solid 3px $tertiary-color;
+}
+
+.checker {
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease-out;
+}
+
+.fa-circle-check {
+    font-size: 20px;
+    background-clip: text;
+    background: $tertiary-color;
+    height: 100%;
+    margin-left: 15px;
+    margin-right: -60px;
+    padding: 25px 20px;
+    border-radius: 0 15px 15px 0;
+    color: white;
 }
 
 .entree {
