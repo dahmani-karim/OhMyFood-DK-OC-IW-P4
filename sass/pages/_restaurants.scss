@@ -55,26 +55,25 @@
     margin-bottom: 15px;
     box-shadow: $box-shadow;
     overflow: hidden;
-    h4 {
+    h4, p {
         margin: 0;
-        max-width: 80%;
-    }
-    p {
-        margin: 0;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
     }
     &:hover {
         .checker {
             transform: translateX(-60px);
         }
+        .detailsPlat {
+            width: 70%;
+        }
     }
 }
 
 .detailsPlat {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 80%;
     padding: 15px 0;
+    width: 80%;
 }
 
 .commander {
