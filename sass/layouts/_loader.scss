@@ -13,12 +13,9 @@
     0% {
         opacity: 100%;
     }
-    99% {
-        opacity: 0%;
-    }
     100% {
         opacity: 0%;
-        display: none;
+        transform: translateY(-1000px);
     }
 }
 
@@ -33,8 +30,7 @@
     width: 100%;
     height: 100%;
     background: $gradient-color;
-    animation: loading 2.5s 2.25s both;
-    -moz-animation: loading 2.5s 2.25s both; // actually don't work on firefox
+    animation: loading 2.5s 2.25s forwards;
     img {
         height: 120%;
     }
