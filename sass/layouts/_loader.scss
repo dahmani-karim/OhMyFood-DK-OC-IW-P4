@@ -34,6 +34,7 @@
     height: 100%;
     background: $gradient-color;
     animation: loading 2.5s 2.25s both;
+    -moz-animation: loading 2.5s 2.25s both; // actually don't work on firefox
     img {
         height: 120%;
     }
