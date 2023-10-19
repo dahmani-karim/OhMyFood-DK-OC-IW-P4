@@ -88,10 +88,10 @@ header {
   transform: scale(0.9);
 }
 
-/* Footer config */
 /* Colors */
 /* Shadow effect */
 /* Screen breakpoints */
+/* Footer config */
 footer {
   background: #353535;
   color: white;
@@ -105,23 +105,6 @@ footer i {
 /* Colors */
 /* Shadow effect */
 /* Screen breakpoints */
-@keyframes loading-bowl {
-  0% {
-    transform: translateX(-1000px);
-  }
-  100% {
-    transform: translateX(0%);
-  }
-}
-@keyframes loading {
-  0% {
-    opacity: 100%;
-  }
-  100% {
-    opacity: 0%;
-    transform: translateY(-1000px);
-  }
-}
 .loader {
   display: flex;
   flex-direction: column;
@@ -145,17 +128,17 @@ footer i {
 
 .bowl1 {
   color: #99E2D0;
-  animation: loading-bowl 0.75s 0s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  animation: slideLtoR 0.75s 0s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
 
 .bowl2 {
   color: #FF79DA;
-  animation: loading-bowl 1.5s 0s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  animation: slideLtoR 1.5s 0s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
 
 .bowl3 {
   color: #9356DC;
-  animation: loading-bowl 2.25s 0s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  animation: slideLtoR 2.25s 0s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
 
 /* Colors */
@@ -286,14 +269,6 @@ footer i {
 /* Shadow effect */
 /* Screen breakpoints */
 /* Menus of Restaurants*/
-@keyframes slideLtoR {
-  0% {
-    transform: translateX(-1000px);
-  }
-  100% {
-    transform: translateX(0%);
-  }
-}
 .menu-background {
   background-color: white;
 }
@@ -553,5 +528,22 @@ body {
 /* Colors */
 /* Shadow effect */
 /* Screen breakpoints */
+@keyframes loading {
+  0% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0%;
+    transform: translateY(-1000px);
+  }
+}
+@keyframes slideLtoR {
+  0% {
+    transform: translateX(-1000px);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

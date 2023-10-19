@@ -1,15 +1,6 @@
 @import '../utils/variables';
 
 /* Menus of Restaurants*/
-@keyframes slideLtoR {
-    0% {
-        transform: translateX(-1000px);
-    }
-    100% {
-        transform: translateX(0%);
-    }
-}
-
 .menu-background {
     background-color: white;
 }

@@ -1,24 +1,5 @@
 @import '../utils/variables';
 
-@keyframes loading-bowl {
-    0% {
-        transform: translateX(-1000px);
-    }
-    100% {
-        transform: translateX(0%);
-    }
-}
-
-@keyframes loading {
-    0% {
-        opacity: 100%;
-    }
-    100% {
-        opacity: 0%;
-        transform: translateY(-1000px);
-    }
-}
-
 // Loader configuration
 .loader {
     display: flex;
@@ -43,15 +24,15 @@
 
 .bowl1 {
     color: $tertiary-color;
-    animation: loading-bowl .75s 0s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    animation: slideLtoR .75s 0s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
 
 .bowl2 {
     color: $secondary-color;
-    animation: loading-bowl 1.5s 0s  cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    animation: slideLtoR 1.5s 0s  cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
 
 .bowl3 {
     color: $primary-color;
-    animation: loading-bowl 2.25s 0s  cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    animation: slideLtoR 2.25s 0s  cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
