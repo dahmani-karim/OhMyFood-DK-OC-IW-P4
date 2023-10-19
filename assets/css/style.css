@@ -34,11 +34,25 @@ h4 {
   font-size: 18px;
   font-weight: 400;
   font-family: "Shrikhand", cursive;
-  margin: 0;
+  margin-top: 0;
 }
 
 .footerLinks {
   font-weight: 500;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.footerLinks li {
+  padding-bottom: 5px;
+}
+
+.widthFooter1 {
+  width: 380px;
+}
+
+.widthFooter2 {
+  width: 260px;
 }
 
 a {
@@ -492,7 +506,11 @@ body {
     flex-direction: row-reverse;
     justify-content: flex-start;
     align-items: center;
-    gap: 20px;
+    gap: 40px;
+    padding: 30px 25px;
+  }
+  .titleFooter {
+    margin-bottom: 0;
   }
   .footerLinks {
     display: flex;
@@ -500,6 +518,12 @@ body {
     justify-content: flex-start;
     align-items: center;
     gap: 16px;
+  }
+  .widthFooter1 {
+    order: 2;
+  }
+  .widthFooter2 {
+    order: 1;
   }
 }
 /* Desktop devices (up to 1024px) */
