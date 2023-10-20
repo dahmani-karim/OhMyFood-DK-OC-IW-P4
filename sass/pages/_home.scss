@@ -47,14 +47,13 @@
 .notice {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     gap: 20px;
 }
 
 .step {
     display: flex;
     align-items: center;
-    gap: 20px;
     background: $bg-color;
     border-radius: 20px;
     box-shadow: $box-shadow;
@@ -72,10 +71,12 @@
     border-radius: 50%;
     position: relative;
     left: -12px;
+    margin-right: 20px;
 }
 
 .consigne {
     font-weight: 500;
+    padding-left: 20px;
 }
 
 .restaurants {
